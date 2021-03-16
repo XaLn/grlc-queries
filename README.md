@@ -1,2 +1,2 @@
 # grlc-queries
-Test pour basculer Sparql en swagger
+Test pour jouer des requêtes Swagger
