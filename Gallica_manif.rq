@@ -1,0 +1,8 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdarelationships: <http://rdvocab.info/RDARelationshipsWEMI/>
+SELECT DISTINCT *
+WHERE {
+  ?manif rdarelationships:electronicReproduction ?arkGallica;
+         rdarelationships:workManifested ?oeuvre;
+         dcterms:title ?_titre.
+} LIMIT 100
