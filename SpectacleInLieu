@@ -1,0 +1,11 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schemaorg: <http://schema.org/>
+PREFIX dcmitype: <http://purl.org/dc/dcmitype/>
+PREFIX frbr-rda: <http://rdvocab.info/uri/schema/FRBRentitiesRDA/>
+SELECT DISTINCT ?spectacle ?lieu
+WHERE {
+?spectacle a dcmitype:Event;
+  schemaorg:location ?lieu.
+  FILTER(regex(?lieu,'^Nevers'))
+}
