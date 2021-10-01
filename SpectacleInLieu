@@ -7,5 +7,5 @@ SELECT DISTINCT ?spectacle ?lieu
 WHERE {
 ?spectacle a dcmitype:Event;
   schemaorg:location ?lieu.
-  FILTER(regex(?lieu,'^Nevers'))
+  FILTER(regex(?lieu,'^_Lieu'))
 }
